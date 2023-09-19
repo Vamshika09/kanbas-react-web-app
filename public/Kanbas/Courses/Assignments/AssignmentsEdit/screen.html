@@ -1,0 +1,95 @@
+<!-- KanbasNavigation CourseNavigation Modules CourseStatus -->
+<table width="100%">
+    <tr>
+        <td valign="top">
+            <ul>
+                <!-- KanbasNaviagtion -->
+                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+            <!--CourseNavigation-->
+            <ul>
+                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+            <form action="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html">
+                <select>
+                    <option>SpeedGrader</option>
+                </select>
+                <h1>Assignment Name</h1>
+                <input type="text" placeholder="Assignment Name"></br>
+                <textarea>This is the assignment description</textarea></br>
+                <label for="gradePoints">Points</label></br>
+                <input id="gradePoints" type="number" placeholder="0"></br>
+                <label for="assignmentGroup">Assignment Group</label></br>
+                <select id="assignmentGroup">
+                    <option>Assignments</option>
+                </select></br>
+                <label for="displayGradeAs">Display Grade as</label></br>
+                <select id="displayGradeAs">
+                    <option>Percentage</option>
+                </select></br>
+                <label for="SubmissionType">Submission Type</label></br>
+                <select id="SubmissionType">
+                    <option>Online</option>
+                </select></br>
+                <label for="OnlineEntryOptions">Online Entry Options</label></br>
+                <input type="checkbox" id="textEntry"></br>
+                <label for="textEntry">Text Entry</label></br>
+                <input type="checkbox" id="websiteUrl"></br>
+                <label for="websiteUrl">Website Url</label></br>
+                <label for="SubmissionAttempts">Submission Attempts</label></br>
+                <select id="SubmissionAttempts">
+                    <option>Unlimited</option>
+                </select></br>
+                <label for="PlagiarismReview">Plagiarism Review</label></br>
+                <select id="PlagiarismReview">
+                    <option>None</option>
+                </select></br>
+                <label for="GroupAssignment">Group Assignment</label></br>
+                <input type="checkbox" id="groupAss"></br>
+                <label for="groupAss">This is a group assignment</label></br>
+                <label for="PeerReviews">Peer Reviews</label></br>
+                <input type="checkbox" id="peerRev"></br>
+                <label for="peerRev">Require Peer Reviews</label></br>
+                <label for="AssignTo">Assign To</label></br>
+                <input type="text" for="AssignTo" placeholder="Assign To"></br>
+                <label for="DueDate">Due</label></br>
+                <input type="date" for="DueDate"></br>
+                <label for="AvailableFrom">Available From</label></br>
+                <input type="date" for="AvailableFrom"></br>
+                <label for="AvailableUntil">Until</label></br>
+                <input type="date" for="AvailableUntil"></br>
+                <button>Cancel</button>
+                <button>Save</button>
+            </form>                                     
+        </td>
+    </tr>
+ </table>
