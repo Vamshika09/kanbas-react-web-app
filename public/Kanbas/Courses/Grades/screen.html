@@ -1,97 +1,211 @@
-<table width="100%" border="1">
-    <tr>
-        <!-- KanbasNaviagtion -->
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <!-- CourseNavigation -->
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <select>
-                <option>Gradebook</option>
-            </select>
-            <button>Import</button>
-            <select>
-                <option>Export</option>
-            </select>
-            <button>Configure</button>
-            <label for="searchStudents" >Student Names</label>
-            <input id="searchStudents" type="text" placeholder="Search Students"/>
-            <label for="assignmentNames" >Assignment Names</label>
-            <input type="text" id="assignmentNames" placeholder="Search Assignments"/>
-            <button>Apply filters</button>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Student Name</td>
-                        <td>A1</td>
-                        <td>A2</td>
-                        <td>A3</td>
-                        <td>A4</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Vamshika</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Gill</td>
-                        <td>40</td>
-                        <td>10</td>
-                        <td>20</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>Josh</td>
-                        <td>40</td>
-                        <td><input type="number" placeholder="0"></td>
-                        <td>20</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>Farah</td>
-                        <td>40</td>
-                        <td>50</td>
-                        <td>20</td>
-                        <td>80</td>
-                    </tr>
-                </tbody>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../../../style.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../CourseStatusNavigation/index.css" />
+  </head>
+  <body class="wd-flex-row-container">
+    <div class="wd-flex-grow-1 d-md-block wd-kanbas-navigation">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ahCyAshjeeV4vRiyexgcIkbwtkQX7YgaYQ&usqp=CAU"
+      />
+      <ul>
+        <li>
+          <a href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa fa-regular fa-user"></i>
+            Account
+          </a>
+        </li>
+        <li>
+          <a href="/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="wd-active">
+          <a href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-solid fa-book"></i>
+            Courses
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            Calendar
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-inbox" aria-hidden="true"></i>
+            Inbox
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            History
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-video-camera" aria-hidden="true"></i>
+            Studio
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-solid fa-arrow-right" aria-hidden="true"></i>
+            Commons</a
+          >
+        </li>
+        <li>
+          <a href="#" class=".wd-kanbas-navigation-small-icons">
+            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+            Help
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="wd-flex-grow-11 wd-flex-column-container">
+      <div class="wd-breadcrumb d-none d-md-block">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li>
+              <a href="#"><i class="fa fa-bars" aria-hidden="true"></i> </a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">CS4450.12631.202410</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
+        <hr />
+      </div>
+      <div class="wd-flex-row-container">
+        <div class="wd-flex-grow-1 d-none d-md-block">
+          <ul class="wd-course-navigation">
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+            </li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li>
+              <a
+                href="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html"
+                >Assignments</a
+              >
+            </li>
+            <li><a href="#">Quizzes</a></li>
+            <li class="wd-active">
+              <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+            </li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li>
+              <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"
+                >Settings</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="wd-flex-grow-11 wd-flex-column-container wd-grade-screen">
+          <div class="d-flex flex-row justify-content-end align-items-center">
+            <button type="button" class="btn btn-secondary m-2">
+              <i class="fa fa-download" aria-hidden="true"></i>
+              Import
+            </button>
+            <button type="button" class="btn btn-secondary m-2">
+              <i class="fa fa-upload" aria-hidden="true"></i>
+              Export
+            </button>
+            <button type="button" class="btn btn-secondary m-2 align-self-stretch">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="d-flex flex-row">
+            <div class="w-50">
+              <label class="form-check-label" for="studentNames">
+                <strong> Search Students </strong>
+              </label>
+              <select
+                class="form-control"
+                id="studentNames"
+                aria-placeholder="Search Students"
+              ></select>
+            </div>
+            <div class="w-50">
+              <label class="form-check-label" for="studentAssignments">
+                <strong> Search Assignments </strong>
+              </label>
+              <select
+                class="form-control"
+                id="studentAssignments"
+                aria-placeholder="Search Assignments"
+              ></select>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="btn btn-secondary m-2">
+              <i class="fa fa-filter" aria-hidden="true"></i>
+              Search filters
+            </button>
+          </div>
+          <div>
+            <table class="table table-bordered table-striped mt-2">
+              <tbody>
+                <tr>
+                  <th scope="col" class="w-25">Student Name</th>
+                  <th scope="col">
+                    A1 SETUP <br />
+                    <small>Out of 20</small>
+                  </th>
+                  <th scope="col">
+                    A2 HTML <br />
+                    <small>Out of 10</small>
+                  </th>
+                  <th scope="col">
+                    A3 HTML <br />
+                    <small>Out of 10</small>
+                  </th>
+                  <th scope="col">
+                    A4 HTML <br />
+                    <small>Out of 10</small>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="text-danger">Vamshika</td>
+                  <td>10</td>
+                  <td>20</td>
+                  <td>10</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">Lekkala</td>
+                  <td>
+                    <input type="number" class="form-control w-25" value="8" />
+                  </td>
+                  <td>5</td>
+                  <td>
+                    <input type="number" class="form-control w-25" value="8" />
+                  </td>
+                  <td>5</td>
+                </tr>
+              </tbody>
             </table>
-        </td>
-    </tr>
-</table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

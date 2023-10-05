@@ -1,51 +1,208 @@
-<form action="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html">
-    <select>
-        <option>SpeedGrader</option>
-    </select>
-    <h1>Assignment Name</h1>
-    <input type="text" placeholder="Assignment Name"></br>
-    <textarea>This is the assignment description</textarea></br>
-    <label for="gradePoints">Points</label></br>
-    <input id="gradePoints" type="number" placeholder="0"></br>
-    <label for="assignmentGroup">Assignment Group</label></br>
-    <select id="assignmentGroup">
-        <option>Assignments</option>
-    </select></br>
-    <label for="displayGradeAs">Display Grade as</label></br>
-    <select id="displayGradeAs">
-        <option>Percentage</option>
-    </select></br>
-    <label for="SubmissionType">Submission Type</label></br>
-    <select id="SubmissionType">
-        <option>Online</option>
-    </select></br>
-    <label for="OnlineEntryOptions">Online Entry Options</label></br>
-    <input type="checkbox" id="textEntry"></br>
-    <label for="textEntry">Text Entry</label></br>
-    <input type="checkbox" id="websiteUrl"></br>
-    <label for="websiteUrl">Website Url</label></br>
-    <label for="SubmissionAttempts">Submission Attempts</label></br>
-    <select id="SubmissionAttempts">
-        <option>Unlimited</option>
-    </select></br>
-    <label for="PlagiarismReview">Plagiarism Review</label></br>
-    <select id="PlagiarismReview">
-        <option>None</option>
-    </select></br>
-    <label for="GroupAssignment">Group Assignment</label></br>
-    <input type="checkbox" id="groupAss"></br>
-    <label for="groupAss">This is a group assignment</label></br>
-    <label for="PeerReviews">Peer Reviews</label></br>
-    <input type="checkbox" id="peerRev"></br>
-    <label for="peerRev">Require Peer Reviews</label></br>
-    <label for="AssignTo">Assign To</label></br>
-    <input type="text" for="AssignTo" placeholder="Assign To"></br>
-    <label for="DueDate">Due</label></br>
-    <input type="date" for="DueDate"></br>
-    <label for="AvailableFrom">Available From</label></br>
-    <input type="date" for="AvailableFrom"></br>
-    <label for="AvailableUntil">Until</label></br>
-    <input type="date" for="AvailableUntil"></br>
-    <button>Cancel</button>
-    <button>Save</button>
-</form>
+<link rel="stylesheet" href="../../../style.css" />
+<link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+<link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+<link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="../CourseStatusNavigation/index.css" />
+<div class="wd-assignment-edit-screen d-flex flex-column">
+  <div class="d-flex flex-row justify-content-end align-items-center">
+    <a href="#">
+      <i class="fa fa-check-circle text-success" aria-hidden="true"></i>
+      Published
+    </a>
+    <button type="button" class="btn btn-secondary m-2">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </button>
+  </div>
+  <hr />
+  <form class="wd-edit-assignment-form">
+    <div class="form-group">
+      <label for="assignmentName">Assignment Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="assignmentName"
+        value="A1 - ENV + HTML"
+      />
+      <textarea class="wd-container-for-input">
+                Assignment description
+    </textarea
+      >
+      <div class="custom-container container">
+        <div class="row row-align">
+          <div class="col col-align">
+            <label for="points">Points</label>
+          </div>
+          <div class="col col-align">
+            <input type="text" class="form-control" id="points" value="100" />
+          </div>
+        </div>
+        <div class="row row-align">
+          <div class="col col-align">
+            <label for="assignmentGroup">Assignment Group</label>
+          </div>
+          <div class="col col-align">
+            <select id="assignmentGroup" class="form-control">
+              <option>Assignments</option></select
+            >
+          </div>
+        </div>
+        <div class="row row-align">
+          <div class="col col-align">
+            <label for="displayGradeAs">Display Grade as</label>
+          </div>
+          <div class="col col-align">
+            <select id="displayGradeAs" class="form-control">
+              <option>Percentage</option></select
+            >
+          </div>
+        </div>
+        <div class="row row-align">
+          <div class="col col-align "></div>
+          <div class="col form-check align-self-center  mt-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="assignmentCount"
+            />
+            <label class="form-check-label" for="assignmentCount">
+              Do not count this assignment to final grade
+            </label>
+          </div>
+        </div>
+        <div class="row row-align">
+          <div class="col col-align">Submission Type</div>
+          <div
+            class="col border border-secondary bg-white wd-container-for-input d-flex flex-column justify-content-around"
+          >
+            <select id="SubmissionType" class="form-control">
+              <option>Online</option></select
+            >
+            <label class="form-check-label">
+                <strong> Online Entry Options </strong> </label
+              >
+            <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="textEntry"
+                    checked
+                  />
+                  <label class="form-check-label" for="textEntry"> Text Entry </label>
+            </div>
+            <div>
+                <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="websiteUrl"
+                checked
+              />
+              <label class="form-check-label" for="websiteUrl">
+                Website Url </label
+              >
+            </div>
+            <div>
+                <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="mediaRecordings"
+                checked
+              />
+              <label class="form-check-label" for="mediaRecordings">
+                Media Recordings </label
+              >
+            </div>
+            <div>
+                <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="fileUploads"
+                checked
+              />
+              <label class="form-check-label" for="fileUploads">
+                File Uploads </label>
+            </div>
+            <div>
+                <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="studentAnnotations"
+                checked
+              />
+              <label class="form-check-label" for="studentAnnotations">
+                Student Annotations
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row row-align">
+            <div class="col col-align">Assign</div>
+            <div
+              class="col border border-secondary bg-white wd-container-for-input d-flex flex-column justify-content-around"
+            >
+            <label class="form-check-label">
+                <strong> Assign To </strong> </label
+              >
+              <select id="assignType" class="form-control">
+                <option>Everyone</option></select
+              >
+              <label class="form-check-label" for="dueDate">
+                <strong> Due </strong> </label
+              >
+              <input type="date" class="form-control" id="dueDate" />
+              <div class="d-flex flex-row justify-content-between">
+                <div>
+                    <label class="form-check-label" for="availableFrom">
+                      <strong> Available from </strong> </label
+                    >
+                    <input type="date" class="form-control" id="availableFrom" />
+                </div>
+                <div>
+                    <label class="form-check-label" for="untilDate">
+                      <strong> Until </strong> </label
+                    >
+                    <input type="date" class="form-control" id="untilDate" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-align">
+            <div class="col">
+
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-secondary wd-add-button w-100">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    Add
+                </button>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <div class="d-flex flex-row justify-content-between">
+        <div class="col form-check align-self-center">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="assignmentCount"
+            />
+            <label class="form-check-label" for="assignmentCount">
+              Notify that this content has changed
+            </label>
+        </div>
+        <div>
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button type="button" class="btn btn-danger">Save</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

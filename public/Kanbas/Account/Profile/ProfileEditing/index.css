@@ -1,0 +1,32 @@
+.wd-edit-profile-section {
+  margin: 20px;
+  margin-right: 100px
+}
+
+.wd-edit-profile-section i {
+  font-size: 100px;
+}
+
+.wd-edit-profile-section div{
+    margin-top: 10px;
+}
+
+.wd-links-section {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.container.custom-container {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.wd-buttons-at-end {
+    margin-top: 50px !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.wd-edit-profile-section button i {
+    font-size: smaller;
+}

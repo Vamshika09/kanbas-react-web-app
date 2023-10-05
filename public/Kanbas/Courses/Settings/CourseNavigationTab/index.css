@@ -1,0 +1,5 @@
+.wd-course-navigation-links td{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;    
+}

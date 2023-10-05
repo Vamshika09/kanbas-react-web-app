@@ -1,0 +1,49 @@
+.wd-profile-section {
+  margin: 20px;
+  margin-right: 100px;
+}
+
+.wd-profile-section i {
+  font-size: 100px;
+}
+
+.wd-profile-section h1 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.wd-profile-section p {
+  margin-top: 0px;
+}
+
+.wd-profile-section a {
+  text-decoration: none;
+  color: red;
+}
+
+.wd-name-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wd-name-section button {
+  height: fit-content;
+  margin: 10px;
+}
+
+.wd-name-section button i {
+  font-size: smaller;
+}
+
+.wd-name-section h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.wd-social-media-links i {
+  font-size: smaller;
+}

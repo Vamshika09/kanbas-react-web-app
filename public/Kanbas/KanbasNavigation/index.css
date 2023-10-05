@@ -1,0 +1,47 @@
+.wd-kanbas-navigation{
+    height: 100%;
+}
+
+.wd-kanbas-navigation ul{
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    width: 85px;
+    height: fit-content;
+    margin: 0px;
+}
+
+
+.wd-kanbas-navigation img{
+    width: auto;
+    height: 85px;
+}
+
+.wd-kanbas-navigation ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.wd-kanbas-navigation ul li.wd-active{
+    background-color: white;
+}
+
+.wd-kanbas-navigation ul li.wd-active a{
+    color: red;
+} 
+
+.wd-kanbas-navigation ul li a{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.wd-kanbas-navigation ul li a i{
+    color: red;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}

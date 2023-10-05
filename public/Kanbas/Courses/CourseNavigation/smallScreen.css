@@ -1,0 +1,29 @@
+.wd-small-kanbas-nativgation ul{
+    list-style: none;
+    padding: 30px;
+    margin: 0px;
+}
+
+.wd-small-kanbas-nativgation ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: start;
+}
+
+.wd-small-kanbas-nativgation ul li a{
+    display: flex;
+    flex-direction: row;
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.wd-small-kanbas-nativgation ul li a i{
+    margin-right: 10px;
+}
+
+.wd-float-right {
+    float: right;
+    height: 100px;
+  }

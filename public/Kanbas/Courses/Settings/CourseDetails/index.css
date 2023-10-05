@@ -1,0 +1,20 @@
+.wd-course-details{
+    margin: 30px;
+}
+
+.container.custom-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.container.custom-container select{
+    margin-top: 10px;
+}
+
+.col-align {
+    text-align: start;
+    padding-top: 10px;
+    padding-right: 50px;
+}

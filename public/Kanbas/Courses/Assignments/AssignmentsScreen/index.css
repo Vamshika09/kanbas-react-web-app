@@ -1,0 +1,16 @@
+.wd-assignment-screen {
+    padding-right: 30px;
+}
+
+.wd-title-and-description{
+    margin-left: 10px;
+}
+
+.wd-title-and-description a{
+    color: black;
+    text-decoration: none;
+}
+
+.list-group {
+    border-radius: 0%;
+}

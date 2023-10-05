@@ -1,90 +1,208 @@
-<!-- KanbasNavigation CourseNavigation Modules CourseStatus -->
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <!-- KanbasNaviagtion -->
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <!--CourseNavigation-->
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <!-- theTabBar -->
-            <table>
-                <thead>
-                    <tr>
-                        <td><button onclick="window.location.href='/Kanbas/Courses/Settings/CourseDetails/screen.html'">Course Details</button></td>
-                        <td><button onclick="window.location.href='#'">Sections</button></td>
-                        <td><button onclick="window.location.href='/Kanbas/Courses/Settings/CourseNavigationTab/screen.html'">Navigation</button></td>
-                        <td><button onclick="window.location.href='#'">Apps</button></td>
-                        <td><button onclick="window.location.href='#'">Feature Options</button></td>
-                        <td><button onclick="window.location.href='#'">Integrations</button></td>
-                    </tr>
-                </thead>
-            </table>
-            <!-- CourseNavigationTab -->
+ <html>
+  <head>
+    <link rel="stylesheet" href="../../../../style.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../CourseStatusNavigation/index.css" />
+  </head>
+  <body class="wd-flex-row-container">
+    <div class="wd-flex-grow-1 d-md-block wd-kanbas-navigation">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ahCyAshjeeV4vRiyexgcIkbwtkQX7YgaYQ&usqp=CAU"
+      />
+      <ul>
+        <li>
+          <a href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa fa-regular fa-user"></i>
+            Account
+          </a>
+        </li>
+        <li>
+          <a href="/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="wd-active">
+          <a href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-solid fa-book"></i>
+            Courses
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            Calendar
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-inbox" aria-hidden="true"></i>
+            Inbox
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            History
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-video-camera" aria-hidden="true"></i>
+            Studio
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-solid fa-arrow-right" aria-hidden="true"></i>
+            Commons</a
+          >
+        </li>
+        <li>
+          <a href="#" class=".wd-kanbas-navigation-small-icons">
+            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+            Help
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="wd-flex-grow-11 wd-flex-column-container">
+      <div class="wd-breadcrumb d-none d-md-block">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li>
+              <a href="#"><i class="fa fa-bars" aria-hidden="true"></i> </a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">CS4450.12631.202410</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
+        <hr />
+      </div>
+      <div class="wd-flex-row-container">
+        <div class="wd-flex-grow-1 d-none d-md-block">
+          <ul class="wd-course-navigation">
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+            </li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li>
+              <a
+                href="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html"
+                >Assignments</a
+              >
+            </li>
+            <li><a href="#">Quizzes</a></li>
+            <li>
+              <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+            </li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li class="wd-active">
+              <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"
+                >Settings</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="wd-flex-grow-11 wd-flex-column-container wd-course-details">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link  text-danger" aria-current="page" href="#"
+                >Course Details</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#">Sections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/Kanbas/Courses/Settings/CourseNavigationTab/screen.html">Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-danger"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Feature Options</a
+              >
+            </li>
+          </ul>
+          <div class="m-2 mt-3">
             <p>Drag and drop items to reorder them in the course navigation</p>
-            <ul>
-                <li>Home</li>
-                <li>Modules</li>
-                <li>Piazza</li>
-                <li>Zoom Meetings</li>
-                <li>Assignments</li>
-                <li>Quizzes</li>
-                <li>Grades</li>
-                <li>People</li>
-                <li>Panopto Video</li>
-            </ul>
-            <p>Drag items to hide them from the students</p>
-            <ul>
-                <li>Chat</li>
-                <li>SCORM</li>
-                <li>Attendance</li>
-                <li>Barnes and Noble Bookstore</li>
-                <li>Digication</li>
-                <li>Top Hat</li>
-                <li>Syllabus</li>
-                <li>Perusall</li>
-                <li>Microsoft Team Meetings</li>
-                <li>FACT reporting and Photo Roster</li>
-                <li>Progress Reports(Navigate)</li>
-                <li>Microsoft Teams for Canvas</li>
-                <li>VHL Central</li>
-                <li>Gradescope 1.3</li>
-                <li>Credentials</li>
-                <li>iClicker</li>
-            </ul>
-            <button>Save</button>            
-        </td>
-    </tr>
- </table>
+            <table class="table table-bordered wd-course-navigation-links">
+                <tbody>
+                  <tr>
+                    <td>Home</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        Modules
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Piazza
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+          <div class="mt-2">
+            <p>Drag and drop items to hide them from students</p>
+            <small>Disabling most pages</small>
+            <table class="table table-bordered wd-course-navigation-links">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div>
+                        <p>Chat</p>
+                      </div>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <p>SCROM</p>
+                      </div>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <p>Attendance</p>
+                      </div>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+          <button class="btn btn-danger align-self-start">Save</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

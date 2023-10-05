@@ -1,101 +1,235 @@
-<!-- KanbasNavigation CourseNavigation Modules CourseStatus -->
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <!-- KanbasNaviagtion -->
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../../../style.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../CourseStatusNavigation/index.css" />
+  </head>
+  <body class="wd-flex-row-container">
+    <div class="wd-flex-grow-1 d-md-block wd-kanbas-navigation">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ahCyAshjeeV4vRiyexgcIkbwtkQX7YgaYQ&usqp=CAU"
+      />
+      <ul>
+        <li>
+          <a href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa fa-regular fa-user"></i>
+            Account
+          </a>
+        </li>
+        <li>
+          <a href="/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="wd-active">
+          <a href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-solid fa-book"></i>
+            Courses
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            Calendar
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-inbox" aria-hidden="true"></i>
+            Inbox
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            History
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-video-camera" aria-hidden="true"></i>
+            Studio
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-solid fa-arrow-right" aria-hidden="true"></i>
+            Commons</a
+          >
+        </li>
+        <li>
+          <a href="#" class=".wd-kanbas-navigation-small-icons">
+            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+            Help
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="wd-flex-grow-11 wd-flex-column-container">
+      <div class="wd-breadcrumb d-none d-md-block">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li>
+              <a href="#"><i class="fa fa-bars" aria-hidden="true"></i> </a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">CS4450.12631.202410</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
+        <hr />
+      </div>
+      <div class="wd-flex-row-container">
+        <div class="wd-flex-grow-1 d-none d-md-block">
+          <ul class="wd-course-navigation">
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+            </li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li class="wd-active">
+              <a
+                href="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html"
+                >Assignments</a
+              >
+            </li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li>
+              <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"
+                >Settings</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="wd-flex-grow-11 wd-flex-column-container wd-assignment-screen">
+          <div class="d-flex justify-content-between">
+            <div>
+              <input
+                type="text"
+                class="form-control m-1"
+                id="search-assignment"
+                placeholder="Search of Assignment"
+              />
+            </div>
+            <div class="d-flex justify-content-around">
+              <button type="button" class="btn btn-secondary m-1">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Group
+              </button>
+              <button type="button" class="btn btn-danger m-1">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Assignment
+              </button>
+              <button type="button" class="btn btn-secondary m-1">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div>
+            <hr />
+          </div>
+          <div>
+            <ul
+              class="list-group border border-success border-5 border-top-0 border-bottom-0 border-end-0"
+            >
+              <a
+                href="#"
+                class="list-group-item list-group-item-action list-group-item-secondary d-flex justify-content-between align-items-center"
+              >
+                Assignments
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark btn-sm rounded-pill"
+                  >
+                    40% of Total
+                  </button>
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </a>
+              <div
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex justify-content-between align-items-center">
+                  <i
+                    class="fa fa-pencil-square-o text-success"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="wd-title-and-description">
+                    <a
+                      href="/Kanbas/Courses/Assignments/AssignmentsEdit/screen.html"
+                    >
+                      <strong>A1 SETUP</strong>
+                    </a>
+                    <p>
+                      <small class="font-weight-light">Week 0 - setup</small
+                      ><br />
+                      <small class="font-weight-light"
+                        >Due September 8, 2023 at 11:59 PM</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <i
+                    class="fa fa-check-circle text-success m-3"
+                    aria-hidden="true"
+                  ></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex justify-content-between align-items-center">
+                  <i
+                    class="fa fa-pencil-square-o text-success"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="wd-title-and-description">
+                    <a
+                      href="/Kanbas/Courses/Assignments/AssignmentsEdit/screen.html"
+                    >
+                      <strong>A2 HTML</strong>
+                    </a>
+                    <p>
+                      <small class="font-weight-light">Week 0 - setup</small
+                      ><br />
+                      <small class="font-weight-light"
+                        >Due September 8, 2023 at 11:59 PM</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <i
+                    class="fa fa-check-circle text-success text-success m-3"
+                    aria-hidden="true"
+                  ></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
             </ul>
-        </td>
-        <td valign="top">
-            <!--CourseNavigation-->
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/AssignmentsScreen/screen.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <input id="assignmentName" placeholder="Search for Assignments"/>
-            <button>Group</button>
-            <button>Assignments</button>
-            <select>
-                <option>Edit Assignment Dates</option>
-            </select>
-            <ul>
-                <li>
-                    <h1>Assignments 40% of Total</h1>
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed grader</option>
-                        <option>Duplicate</option>
-                    </select> 
-                    <ul>
-                        <li><a href="/Kanbas/Courses/Assignments/AssignmentsEdit/screen.html">A1-ENV+HTML</a></li>
-                        <li><a href="/Kanbas/Courses/Assignments/AssignmentsEdit/screen.html">A2-CSS+Bootstrap</a></li>
-                        <li><a href="/Kanbas/Courses/Assignments/AssignmentsEdit/screen.html">A3-JS+React</a></li>
-                    </ul>       
-                </li>
-                <li>
-                    <h1>Quizzes 10% of Total</h1>
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed grader</option>
-                        <option>Duplicate</option>
-                    </select> 
-                    <ul>
-                        <li><a href="#">Q1-HTML</a></li>
-                        <li><a href="#">Q2-CSS</a></li>
-                        <li><a href="#">Q3-JS, ES6</a></li>
-                    </ul>       
-                </li>
-                <li>
-                    <h1>Exams 20% of Total</h1>
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed grader</option>
-                        <option>Duplicate</option>
-                    </select> 
-                    <ul>
-                        <li><a href="#">Midterm</a></li>
-                        <li><a href="#">Final</a></li>
-                    </ul>       
-                </li>
-                <li>
-                    <h1>Project 30% of Total</h1>
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed grader</option>
-                        <option>Duplicate</option>
-                    </select> 
-                    <ul>
-                        <li><a href="#">Project</a></li>
-                    </ul>       
-                </li>
-            </ul>                              
-        </td>
-    </tr>
- </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

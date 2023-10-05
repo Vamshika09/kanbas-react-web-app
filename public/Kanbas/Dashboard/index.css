@@ -1,0 +1,40 @@
+.wd-dashboard-area h1{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.wd-dashboard-area h3{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.wd-dashboard-area hr{
+    margin: 0;
+}
+.wd-course-tile-style {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+}
+
+.wd-course-title-description {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.wd-course-title-description a i{
+    margin-top: 10px;
+    color: #FF69B4;
+}
+
+.wd-course-title {
+    color: #FF69B4;
+    margin-bottom: 0%;
+}
+
+.wd-course-description {
+    font-weight: lighter;
+    color: gray;
+    font-size: smaller;
+    margin: 0px;
+}

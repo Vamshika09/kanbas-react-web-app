@@ -1,0 +1,14 @@
+.wd-module-list {
+  margin: 10px;
+}
+
+.wd-buttons-section {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.wd-buttons-section button {
+  margin-left: 5px;
+  margin-right: 5px;
+}

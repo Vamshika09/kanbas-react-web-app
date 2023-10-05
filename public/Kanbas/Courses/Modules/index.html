@@ -1,43 +1,42 @@
-<button>Collapse All</button>
-<button>View Progress</button>
-<select>
-    <option>Publish All</option>
-    <option>Publish all items and modules</option>
-    <option>Unpublish</option>
-</select>
-<button>Module</button>
-<hr/>
-<ul>
-    <li>Week 0 - INTRO
-        <ul>
-            <li>LEARNING OBJECTIVES</li>
-            <ul>
-                <li>Introduction to the course</li>
-                <li>Learn what is Web Development</li>
+<html>
+  <head> 
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="wd-module-list">
+    <div class="wd-buttons-section justify-content-end">
+        <button type="button" class="btn btn-secondary btn-sm">Collapse All</button>
+        <button type="button" class="btn btn-secondary btn-sm">View Progress</button>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Publish All
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Publish All</a></li>
+              <li><a class="dropdown-item" href="#">Publish all items and modules</a></li>
+              <li><a class="dropdown-item" href="#">Unpublish</a></li>
             </ul>
-            <li>READING</li>
-            <ul>
-                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>                
-            </ul>
-            <li>SLIDES</li>
-            <ul>
-                <li><a href="#">Introduction to Web Development Links to an external site</a></li>
-            </ul>
-        </ul>
-    </li>
-    <li>Week 1 - HTML
-        <ul>
-            <li>LEARNING OBJECTIVES</li>
-            <ul>
-                <li>Introduction to the course</li>
-                <li>Learn what is Web Development</li>
-            </ul>
-            <li>READING</li>
-            <ul>
-                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>                
-            </ul>
-        </ul>
-    </li>
-</ul>
+        </div>
+        <button type="button" class="btn btn-danger btn-sm">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            Module
+        </button>
+        <button type="button" class="btn btn-secondary btn-sm">
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </button>
+    </div>
+    <hr>
+    <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Week 0 - INTRO</a>
+        <a href="#" class="list-group-item list-group-item-action">LEARNING OBJECTIVES</a>
+        <a href="#" class="list-group-item list-group-item-action px-5">Introduction to the course</a>
+        <a href="#" class="list-group-item list-group-item-action px-5">Learn what web dev is</a>
+        <a href="#" class="list-group-item list-group-item-action px-5">Creating a development environment</a>
+        <a href="#" class="list-group-item list-group-item-action">READING</a>
+        <a href="#" class="list-group-item list-group-item-action wd-change-padding px-5">Full Stack Developer - Chapter 1</a>
+        <a href="#" class="list-group-item list-group-item-action wd-change-padding px-5">Full Stack Developer - Chapter 2</a>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+.wd-course-status {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.wd-course-status a {
+  text-decoration: none;
+}
+
+.wd-course-status hr {
+  margin: 0.25em;
+}
+
+.wd-course-status-buttons {
+  margin-top: 20px;
+}
+
+.wd-course-status-buttons ul {
+  padding-left: 0px;
+}
+
+.wd-course-status-buttons ul button {
+  margin: 2px;
+}

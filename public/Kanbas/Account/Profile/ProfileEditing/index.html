@@ -1,26 +1,111 @@
-<form action="/Kanbas/Account/Profile/screen.html">
-    <h1>Vamshika</h1>
-    <label for="name">Name</label>
-    <input type = "text" id="name">
-    <label for="pronouns">Pronouns</label>
-    <input type = "text" id="pronouns"></br>
-    <label for="title">Title</label>
-    <input type = "text" id="title"></br>
-    <h1>Contact</h1></br>
-    <p>No registered services, you can add on Settings page</p></br>
-    <h1>Biography</h1></br>
-    <textarea placeholder="Write about yourself"></textarea></br>
-    <h1>Links</h1></br>
-    <a href="#">Linkedin</a></br>
-    <label for="titleForLinks">Title</label>
-    <label for="urlForLinks">URL</label></br>
-    <input type = "text" id="titleForLinks" placeholder="Title">
-    <input type = "text" id="urlForLinks" placeholder="URL">
-    <a href="#">Remove</a></br>
-    <button>Add Another Link</button></br>
-    <button>Cancel</button>
-    <button>Save Profile</button></br>
-    <button>Edit Profile</button>
-    <button>Cancel Editing</button></br>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+  </head>
+  <body>
+    <form
+      action="/Kanbas/Account/Profile/screen.html"
+      class="wd-edit-profile-section"
+    >
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <button
+      onclick="window.location.href='/Kanbas/Account/Profile/screen.html'"
+      type="button"
+      class="btn btn-secondary float-end"
+    >
+      <i class="fa fa-pencil wd-small-icon" aria-hidden="true"></i>
+      Cancel Editing
+    </button>
+      <div class="form-outline w-25">
+        <label for="name" class="form-label">Name:*</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Vamshika Lekkala"
+        />
+      </div>
+      <div class="form-outline w-25">
+        <label for="pronouns" class="form-label">Pronouns:</label>
+        <select class="form-select" id="pronouns" aria-label="Select pronouns">
+          <option selected>Pronouns</option>
+          <option value="1">None</option>
+        </select>
+      </div>
+      <div class="form-outline w-25">
+        <label for="title" class="form-label">Title:</label>
+        <input type="text" class="form-control" id="title" />
+      </div>
+      <div>
+        <label class="form-label fs-1">Contact</label>
+        <p>No registered services, you can add on Settings page</p>
+      </div>
+      <div class="form-outline w-25">
+        <label for="biography" class="form-label fs-1">Biography</label>
+        <textarea class="form-control" id="biography" rows="3">
+Student</textarea
+        >
+      </div>
+      <div>
+        <label for="links" class="form-label fs-1">Links</label>
+        <div class="custom-container container text-center .ml-1 wd-links-section">
+          <div class="row w-25">
+            <div class="col w-25">
+              <label for="title" class="form-label">Title</label>
+            </div>
+            <div class="col w-25">
+              <label for="URL" class="form-label">URL</label>
+            </div>
+          </div>
+          <div class="row w-25">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                value="YouTube"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                id="URL"
+                value="https://www.youtube.com/@WebDevTV"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+        type="button"
+        class="btn btn-secondary"
+        style="
+          --bs-btn-padding-y: 0.25rem;
+          --bs-btn-margin-y: 3rem;
+          --bs-btn-padding-x: 0.5rem;
+          --bs-btn-font-size: 0.75rem;
+        "
+      >
+        Add another link
+      </button>
+      </div>
+      <div class="wd-buttons-at-end float-end">
+        <button 
+        type="button" 
+        class="btn btn-secondary"
+        onclick="window.location.href='/Kanbas/Account/Profile/screen.html'">
+        Cancel
+        </button>
+        <button 
+        type="button" 
+        class="btn btn-danger"
+        onclick="window.location.href='/Kanbas/Account/Profile/screen.html'">
+        Save Profile
+        </button>
+      </div>
     </form>
-    
+  </body>
+</html>
