@@ -1,9 +1,5 @@
 function HelloWorld() {
-    return (
-        <div>
-            <h3>Hello World!</h3>
-        </div>
-    )
+  return <h1>Hello World</h1>;
 }
 
 export default HelloWorld;
