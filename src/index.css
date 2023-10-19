@@ -11,3 +11,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wd-flex-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wd-flex-grow-1 {
+  flex-grow: 1;
+}
+
+.wd-flex-grow-6 {
+  flex-grow: 6;
+}
+
+.wd-flex-grow-7 {
+  flex-grow: 7;
+}
+
+.wd-flex-grow-11 {
+  flex-grow: 11;
+}
+
+.wd-breadcrumb nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.wd-breadcrumb nav ol {
+  margin-top: 10px;
+}
+
+.wd-breadcrumb hr {
+  margin: 0%;
+  margin-bottom: 10px;
+}
+
+.wd-breadcrumb nav ol li a {
+  text-decoration: none;
+  color: red;
+  padding-top: 20px;
+}
+
+.wd-breadcrumb nav div li a {
+  text-decoration: none;
+  color: red;
+  padding-top: 20px;
+}
+
+.wd-breadcrumb nav ol li a i {
+  padding-right: 10px;
+  color: black;
+  height: fit-content;
+}
+
+.wd-breadcrumb nav div li a i {
+  padding-right: 10px;
+  height: fit-content;
+}
