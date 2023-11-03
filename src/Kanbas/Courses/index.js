@@ -16,12 +16,12 @@ import Grades from "./Grades";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "../../index.css";
 
-function Courses() {
+function Courses({dbcourses}) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const [empty, kanbas, courses, id, screen] = pathname.split("/");
 
-  let course = db.courses.find((course) => course._id === courseId);
+  let course = dbcourses.find((course) => course._id === courseId);
   course = course
     ? { ...course }
     : {

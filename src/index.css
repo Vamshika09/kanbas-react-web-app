@@ -85,3 +85,17 @@ body * {
   padding-right: 10px;
   height: fit-content;
 }
+
+.btn-primary {
+  background-color: #D41B2C !important;
+  border-color: #D41B2C !important;
+}
+
+.btn-outline-primary {
+  border-color: #D41B2C !important;
+  color: #D41B2C !important;
+}
+
+.btn-outline-primary:hover{
+  background-color: #ddbbbf !important;
+}
