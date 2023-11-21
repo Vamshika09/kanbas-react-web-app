@@ -66,11 +66,11 @@ function Dashboard({
               alt="..."
             />
             <div class="wd-course-title-description">
-              <Link key={course._id} to={`/Kanbas/Courses/${course._id}`}>
+              <Link key={course._id.$oid} to={`/Kanbas/Courses/${course.number}`}>
                 {course.name}
               </Link>
               <p>
-                {course.name}_{course._id}
+                {course.name}_{course._id.$oid}
               </p>
               <p>2023 fall semester</p>
               <div class="d-flex flex-row justify-content-between align-items-baseline m-2">
@@ -91,7 +91,7 @@ function Dashboard({
                     class="btn btn btn-outline-primary ms-2"
                     onClick={(event) => {
                       event.preventDefault();
-                      deleteCourse(course._id);
+                      deleteCourse(course);
                     }}
                   >
                     Delete

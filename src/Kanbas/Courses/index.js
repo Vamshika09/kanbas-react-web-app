@@ -15,22 +15,27 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "../../index.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({dbcourses}) {
+function Courses() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const [empty, kanbas, courses, id, screen] = pathname.split("/");
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    console.log(courseId)
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
 
-  let course = dbcourses.find((course) => course._id === courseId);
-  course = course
-    ? { ...course }
-    : {
-        _id: "",
-        name: "",
-        number: "",
-        startDate: "",
-        endDate: "",
-      };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <div class="wd-flex-grow-7 wd-flex-column-container m-3">
       <div class="d-flex flex-row column-gap-3 align-items-baseline">

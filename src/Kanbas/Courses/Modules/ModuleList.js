@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import db from "../../Database";
 import "./index.css";
@@ -11,13 +11,40 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules
 } from "./modulesReducer";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
+  const handleDeleteModule = (module) => {
+    client.deleteModule(module._id.$oid).then((status) => {
+      dispatch(deleteModule(module._id.$oid));
+    });
+  };
+
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
 
   return (
     <div class="wd-module-list">
@@ -73,14 +100,14 @@ function ModuleList() {
         <button
           type="button"
           class="btn btn-primary m-2"
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+          onClick={handleAddModule}
         >
           Add
         </button>
         <button
           type="button"
           class="btn btn-primary m-2"
-          onClick={() => dispatch(updateModule(module))}
+          onClick={() => handleUpdateModule(module)}
         >
           Update
         </button>
@@ -88,21 +115,9 @@ function ModuleList() {
       <ul className="list-group">
         {modules
           .filter((module) => module.course === courseId)
-          .map((module, index) => (
-            <ul class="list-group mb-3">
+          .map((module) => (
               <li
-                key={index}
-                class="list-group-item list-group-item-action list-group-item-secondary d-flex justify-content-between"
-              >
-                {module.name}
-                <div class="d-flex justify-content-between column-gap-2">
-                  <AiFillCheckCircle />
-                  <AiOutlinePlus />
-                  <FaEllipsisVertical />
-                </div>
-              </li>
-              <li
-                key={index}
+                key={module._id}
                 class="list-group-item list-group-item-action px-5"
               >
                 <div className="d-flex justify-content-between align-items-baseline">
@@ -114,7 +129,7 @@ function ModuleList() {
                     <button
                       type="button"
                       class="btn btn-outline-primary btn-sm m-2"
-                      onClick={() => dispatch(deleteModule(module._id))}
+                      onClick={() => handleDeleteModule(module)}
                     >
                       Delete
                     </button>
@@ -128,7 +143,6 @@ function ModuleList() {
                   </div>
                 </div>
               </li>
-            </ul>
           ))}
       </ul>
     </div>
