@@ -9,7 +9,7 @@ export const deleteModule = async (moduleId) => {
   return response.data;
 };
 
-const COURSES_URL = "http://localhost:4000/api/courses";
+const COURSES_URL = `${API_BASE}/courses`;
 export const findModulesForCourse = async (courseId) => {
   const response = await axios.get(`${COURSES_URL}/${courseId}/modules`);
   console.log(courseId);
