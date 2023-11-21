@@ -10,7 +10,11 @@ function WorkingWithObjects() {
     completed: false,
     score: 0,
   });
-  const URL = "http://localhost:4000/a5/assignment";
+  
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const concat_Api_base = API_BASE.substring(0, API_BASE.length-3);
+  const URL = `${concat_Api_base}a5/assignment`;
+  
   const fetchAssignment = async () => {
     const response = await axios.get(`${URL}`);
     setAssignment(response.data);

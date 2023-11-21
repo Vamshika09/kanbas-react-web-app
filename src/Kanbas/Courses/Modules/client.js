@@ -10,6 +10,7 @@ export const deleteModule = async (moduleId) => {
 };
 
 const COURSES_URL = `${API_BASE}/courses`;
+console.log(COURSES_URL);
 export const findModulesForCourse = async (courseId) => {
   const response = await axios.get(`${COURSES_URL}/${courseId}/modules`);
   console.log(courseId);

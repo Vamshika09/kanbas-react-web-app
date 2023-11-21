@@ -71,7 +71,6 @@ function WorkingWithArrays() {
       <button onClick={createTodo} className="btn btn-primary mb-2 w-100">
         Create Todo
       </button>
-      <button onClick={updateTodo}>Update Todo</button>
       <button onClick={updateTitle} className="btn btn-success mb-2 w-100">
         Update Title
       </button>
@@ -103,6 +102,7 @@ function WorkingWithArrays() {
         />
         Completed
       </label>
+      <button onClick={updateTodo}>Update Todo</button>
       <button onClick={postTodo}>Post Todo</button>
       <ul className="list-group">
         {todos.map((todo) => (
