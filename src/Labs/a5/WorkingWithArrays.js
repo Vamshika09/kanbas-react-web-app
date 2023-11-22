@@ -46,7 +46,10 @@ function WorkingWithArrays() {
     fetchTodos();
   }, []);
 
-  const API = "http://localhost:4000/a5/todos";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const concat_Api_base = API_BASE.substring(0, API_BASE.length-3);
+  const API = `${concat_Api_base}a5/todos`;
+
   return (
     <div>
       <h3>Working with Arrays</h3>

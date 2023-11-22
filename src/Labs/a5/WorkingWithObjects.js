@@ -13,14 +13,14 @@ function WorkingWithObjects() {
   
   const API_BASE = process.env.REACT_APP_API_BASE;
   const concat_Api_base = API_BASE.substring(0, API_BASE.length-3);
-  const URL = `${concat_Api_base}a5/assignment`;
+  const URL = `${concat_Api_base}a5`;
   
   const fetchAssignment = async () => {
-    const response = await axios.get(`${URL}`);
+    const response = await axios.get(`${URL}/assignment`);
     setAssignment(response.data);
   };
   const updateTitle = async () => {
-    const response = await axios.get(`${URL}/title/${assignment.title}`);
+    const response = await axios.get(`${URL}/assignment/title/${assignment.title}`);
     setAssignment(response.data);
   };
   useEffect(() => {
@@ -32,21 +32,21 @@ function WorkingWithObjects() {
       <h3>Working With Objects</h3>
       <h4>Retrieving Objects</h4>
       <a
-        href="/assignment"
+        href={`${URL}/assignment`}
         className="btn btn-primary me-2"
       >
         Get Assignment
       </a>
       <h4>Retrieving Properties</h4>
       <a
-        href="/title"
+        href={`${URL}/assignment/title`}
         className="btn btn-primary me-2"
       >
         Get Title
       </a>
       <h4>Modifying Properties</h4>
       <a
-        href={`${URL}/title/${assignment.title}`}
+        href={`${URL}/assignment/title/${assignment.title}`}
         className="btn btn-primary me-2 float-end"
       >
         Update Title
