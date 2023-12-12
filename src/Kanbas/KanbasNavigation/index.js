@@ -13,7 +13,7 @@ import "./index.css";
 
 function KanbasNavigation() {
   const links = [
-    "Account",
+    // "Account",
     "Dashboard",
     "Courses",
     "Calendar",
@@ -27,7 +27,7 @@ function KanbasNavigation() {
   ];
 
   const linkToIconMap = {
-    Account: <BiUserCircle className="wd-icon" />,
+    // Account: <BiUserCircle className="wd-icon" />,
     Dashboard: <RiDashboard3Fill className="wd-icon" />,
     Courses: <FaBook className="wd-icon" />,
     Calendar: <BsFillCalendar2WeekFill className="wd-icon" />,
