@@ -22,6 +22,8 @@ function KanbasNavigation() {
     "Studio",
     "Commons",
     "Help",
+    "signin",
+    "signup"
   ];
 
   const linkToIconMap = {
